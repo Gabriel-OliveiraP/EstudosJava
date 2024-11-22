@@ -1,4 +1,5 @@
-package studyPolimorfism;
+package herancaEstudo;
+
 
 public class UpcastDowncast {
 	public static void main(String[] args) {

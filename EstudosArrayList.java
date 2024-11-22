@@ -1,21 +1,20 @@
-package estudo.arrayList;
+package estudo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class EstudosArrayList {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<>();
+		ArrayList<String> list = new ArrayList<>();
 		
 		System.out.println("Tamanho da lista: " +  list.size());
 		list.add("Maria");//adicionando Strings na nossa Lista
 		list.add("Alex");
 		list.add("Bob");
 		list.add("Anna");
-		list.add(2, "Marco"); // adicionar em uma posicao especifica
+		list.add(2, "Marco"); // adicionar em uma posicao especifica 
 		for(String x : list) {// for each para imprimir a lista
 			System.out.print(x);
 			System.out.print(" | ");
@@ -33,7 +32,7 @@ public class EstudosArrayList {
 		}
 		System.out.print("Index of Bob = " + list.indexOf("Bob") + " | ");/* colocar a
 		posição do Bob*/
-		System.out.println("Index of Anna = " + list.indexOf("Anna"));/* Como ela
+		System.out.println("Index of Anna = " + list.indexOf("Anna"));/* Como ela 
 		ñ existe na lista, retorna -1*/
 		
 		list.add("Maria");//Readicionando Strings na nossa Lista
@@ -52,15 +51,13 @@ public class EstudosArrayList {
 		for(String x : listaFiltro) {
 			System.out.println(x);
 		}
-		System.out.println("----------------------------");
+		System.out.println("----------------------------");	
 		String primeiroA = list.stream().filter( x -> x.charAt(0) == 'A').findFirst().orElse("tem não");
-		/*Vai filtrar a nossa lista(list) e pegar o primeiro String q começa com 'A'
+		/*Vai filtrar a nossa lista(list) e pegar o primeiro String q começa com 'A' 
 		 * E se não tiver, vai retornar "tem não"
 		 */
 		System.out.println(primeiroA);
-		 List<String> lista = new ArrayList<>();
-		 list.addAll(Arrays.asList("vetor0", "vetor1", "vetor2", "vetor3"));
-		 System.out.println(lista);
+		
 	
 	}
 

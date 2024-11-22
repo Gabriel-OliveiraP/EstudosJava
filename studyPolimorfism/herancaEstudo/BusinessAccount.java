@@ -1,4 +1,5 @@
-package studyPolimorfism;
+package herancaEstudo;
+
 
 public class BusinessAccount extends Account {
 	

@@ -1,4 +1,4 @@
-package studyPolimorfism;
+package estudo.polimorfism;
 
 public class Aplication {
 
